@@ -14,3 +14,7 @@ Projectes Interactius de Disseny Gràfic
 [Sara Marín](https://github.com/marinfs)
 
 [Alba Llidó](https://github.com/alballido10)
+
+[Jorge Balaguer](https://github.com/jorgebalaguerestevan)
+
+[Mohamed Elmenssouri](https://github.com/mohaeasdalcoi)
