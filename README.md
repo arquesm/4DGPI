@@ -18,3 +18,5 @@ Projectes Interactius de Disseny Gràfic
 [Jorge Balaguer](https://github.com/jorgebalaguerestevan)
 
 [Mohamed Elmenssouri](https://github.com/mohaeasdalcoi)
+
+[Alexis Fernández](https://github.com/alexfer0)
