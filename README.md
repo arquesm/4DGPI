@@ -2,7 +2,7 @@
 Projectes Interactius de Disseny Gràfic
 
 Inline-style: 
-![Wiki Interactius](https://github.com/arquesm/4DGPI/blob/master/wiki_2.png "Logo Wiki Interactius")
+![Wiki Interactius](https://github.com/arquesm/4DGPI/blob/master/wiki_2.png)
 
 [Laura Colomo](https://github.com/LauraColomoSantonja)
 
