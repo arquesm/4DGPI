@@ -20,3 +20,18 @@ Projectes Interactius de Disseny Gràfic
 [Mohamed Elmenssouri](https://github.com/mohaeasdalcoi)
 
 [Alexis Fernández](https://github.com/alexfer0)
+
+
+## El joc i la regla.
+
+## La monografia.
+
+* Mohamed - George Ness
+* Sergio - Vera Molnar
+* Julio - Myron Krueger
+* Jorge - Jeffrey Shaw
+* Alba - Ben F. Laposky 
+* Isa - John Whitney 
+* Bàrbara - Jared Tarbell
+* Cybernetic Serendipity
+* Laura - [New Tendencies](https://monoskop.org/New_Tendencies)
