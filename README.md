@@ -1,6 +1,9 @@
 # [4DGPI](https://arquesm.github.io/4DGPI/)
 Projectes Interactius de Disseny Gràfic
 
+Inline-style: 
+![alt text](https://github.com/arquesm/4DGPI/blob/master/wiki_2.png "Logo Title Text 1")
+
 [Laura Colomo](https://github.com/LauraColomoSantonja)
 
 [Sergio Riquelme](https://github.com/Sergiori)
