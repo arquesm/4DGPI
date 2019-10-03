@@ -1,7 +1,7 @@
 # [4DGPI](https://arquesm.github.io/4DGPI/)
 Projectes Interactius de Disseny Gràfic
 
-![alt text](https://github.com/arquesm/4DGPI/blob/master/wiki_2.png "Wiki interactius")
+![http://www.arduino.comparteix.net](https://github.com/arquesm/4DGPI/blob/master/wiki_2.png "Wiki interactius")
 
 [Laura Colomo](https://github.com/LauraColomoSantonja)
 
