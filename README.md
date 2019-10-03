@@ -35,3 +35,11 @@ Projectes Interactius de Disseny Gràfic
 * Bàrbara - Jared Tarbell
 * Cybernetic Serendipity
 * Laura - [New Tendencies](https://monoskop.org/New_Tendencies)
+
+### Guia de la monografia.
+
+* Biografia. La relació context històric i tecnològic, quina tecnologia.
+
+* Linea treball. Destacar per les coses que és més conegut.
+
+* Conclusió final. Destacar un element i/o obra i explicar per què.
