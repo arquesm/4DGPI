@@ -1,6 +1,8 @@
+import processing.pdf.*;
+
 int fons;
 void setup() {
-  size(500, 500);
+  size(500, 500, PDF, "gos.pdf");
 }
 void draw() {
   background(fons);
@@ -40,4 +42,6 @@ void draw() {
     line(280, 120, 280, 220);
     line(300, 120, 300, 220);
   }
+  println("ja està");
+  exit();
 }
