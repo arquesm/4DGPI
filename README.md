@@ -24,9 +24,9 @@ Projectes Interactius de Disseny Gràfic
 [Alexis Fernández](https://github.com/alexfer0)
 
 
-## El joc i la regla.
+## 1 - El joc i la regla.
 
-## La monografia.
+## 2 - La monografia.
 
 * Mohamed - George Ness
 * Sergio - Vera Molnar
@@ -37,6 +37,7 @@ Projectes Interactius de Disseny Gràfic
 * Bàrbara - Jared Tarbell
 * Cybernetic Serendipity
 * Laura - [New Tendencies](https://monoskop.org/New_Tendencies)
+* Alexis - Roman Verostko
 
 ### Guia de la monografia.
 
