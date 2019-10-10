@@ -13,7 +13,7 @@ Projectes Interactius de Disseny Gràfic
 
 [Bàrbara Martí](https://github.com/bamarpe)
 
-[Sara Marín](https://github.com/marinfs)
+[Sara Marín](https://github.com/smarinf)
 
 [Alba Llidó](https://github.com/alballido10)
 
