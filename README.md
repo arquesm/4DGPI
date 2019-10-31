@@ -46,3 +46,11 @@ Projectes Interactius de Disseny Gràfic
 * Linea treball. Destacar per les coses que és més conegut.
 
 * Conclusió final. Destacar un element i/o obra i explicar per què.
+
+## 3 - Cartell
+
+[Cartell classe](https://arduino.comparteix.net/Main/CartellClasse)
+
+## 4 - Motius
+
+[Exportar vídeo desde processing](https://timrodenbroeker.de/processing-tutorial-video-export/)
