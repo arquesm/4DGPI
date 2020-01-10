@@ -1,0 +1,64 @@
+La guia del projecte interactiu
+
+Contingut
+1	Concepte
+2	Investigació
+3	Disseny
+4	Construcció
+5	Finals
+6	Projecte Interactiu
+Concepte
+Traçar el màxim detall possible del:
+
+El tema o idea conceptual. què es vol fer en l’aplicació, el tema.
+El tipus d’interacció, com s’ha de sentir la interacció amb l’usuari, referències sensorials, conductives, pràctiques, psicològiques. els objectius de l’aplicació.
+
+Investigació
+Antecedents. Projectes semblants i comuns, crear una taxonamia i/o classificar-los.
+Haureu de fer la investigació sobre els components que necessiteu i quines biblioteques o codi existents puguin estar disponibles que puguin ajudar-vos a crear el vostre projecte.
+
+Estudi de les tecnologies. 
+Projectes requeriran diferents tecnologies, però gairebé tot el necessari les peces estaran disponibles, o podreu aprofitar els projectes existents que tinguin ha estat creat per vosaltres o per un altre artista o desenvolupador. Pressupost i viabilitat. Si necessiteu hardware, haureu de determinar el pressupost de la vostra sol·licitud i determinar quins components necessitareu. Possibles i futuribles. Necessitats basats en els recursos actuals i propostes futures.
+
+Disseny
+Fusiona les tres anteriors fases.
+Disseny del comportament. Estudi de la relació usuari/usuari i/o usuari/màquina i/o màquina/màquina. Tenir una visió clara de com apareixeran per a un usuari i de com respondran a un usuari i entenen exactament com ha de correlacionar l’acció d’un usuari amb una acció del sistema. Mitjançant diagrames, mapes on aparega com es realitzarà la resposta i entenent com l’acció de l’usuari deuria de ser correlativa amb la de la màquina o viceversa.
+Diagrames de diferents parts del sistema que intervenguen.
+Mostrar com apareixeran aquells usuaris, allò que l’usuari pot voler fer amb ells. Com es relacionen amb la interacció en general.
+
+Construcció
+Vies constructives. Alternatives vàries. Prototipat. Desenvolupar una de les alternatives. Procés de muntar maquinari i escriure codi. Aquí és on escriuràs, debugs, probablement investigarem més i, finalment, muntaràs la teva aplicació.
+
+Finals
+Les proves han de crear situacions què després els usuaris utilitzen la vostra aplicació i observen com l’utilitzen per assegurar-nos que tot funcione. Assegurar-se que tot funcione abans d’enviar el projecte.
+Diagrama i/o esquemes de muntatge a l’espai físic, virtual o performàtic.
+Diagrama i/o esquemes de muntatge dels dispositius.
+Guia del programari.
+
+Projecte Interactiu
+1 Concepte
+ 1.1 Idea i/o tema definició
+ 1.2 Justificació
+ 1.2 Metodologia
+ 1.3 Objectius
+ 
+2 Investigació
+ 2.1 Antecedents
+ 2.2 Estat de la qüestió
+ 2.2 Estudi de les tecnologies
+ 2.3 Viabilitat
+ 
+3 Disseny
+ 3.1 Disseny del comportament
+ 3.2 Disseny de la gràfica
+ 3.3 Disseny de la interacció
+ 
+4 Construcció
+ 4.1 Vies constructives
+ 4.2 Prototip
+ 4.3 Fases del prototip
+ 
+5 Finals
+ 5.1 Instal·lació a l’espai físic i/o virtual
+ 5.2 Els dispositius.
+ 5.3 Guia del programari i/o instal·lativa
