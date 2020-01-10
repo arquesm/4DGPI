@@ -1,0 +1,103 @@
+Programant la interactivitat
+
+Contingut
+1	Disseny computacional
+1.1	Disseny per algoritme
+1.2	Elements de programació informàtica
+1.2.1	Variables
+1.2.2	Loops
+1.2.3	Condicionals
+1.2.4	Funcions
+1.2.5	Objectes
+1.3	Estratègies computacionals per definir espais de disseny
+1.4	Ferramentes per al disseny computacional
+1.5	Bibliografia
+
+Disseny computacional
+Definir models d’espai de disseny dinàmic, necessitem una eina de disseny diferent. En lloc d’especificar una sola forma estàtica, hem de definir el procés pel qual es crea un disseny. Amb aquesta descripció del procés, podem tornar enrere i modificar els passos individuals per crear diferents dissenys.
+El que necessitem és un entorn de disseny separat, extret de la representació de la geometria física, que ens permetrà codificar explícitament un conjunt de passos o instruccions sobre com es generarà el disseny. En terminologia informàtica, un conjunt d'instruccions s'anomena algorisme . Així, podem cridar el procés de disseny a través d’un conjunt d’instruccions de disseny algorítmic . A la pràctica, aquest procés de disseny també es coneix com a disseny paramètric o , en general, de disseny computacional.
+
+Disseny per algoritme
+Què significa dissenyar amb algorismes? Bàsicament vol dir que en lloc d’utilitzar eines informàtiques per dissenyar un formulari, ara estem dissenyant un conjunt d’instruccions específiques que explicaran l’ordinador a la sèrie de passos que cal fer per aconseguir-ho: una mena de "com" computacional per crear a cert disseny.
+Abans de considerar com podríem fer-ho amb un ordinador, pensem en com descriuríem un procés de disseny a un altre humà. Diguem que volíem dir a un altre dissenyador que treballés en un país diferent com modelar un quadre 5 "de cada costat en una eina de disseny digital. Per a això podríem escriure un conjunt d'instruccions com:
+
+1. Trieu un punt de partida
+
+2. Dibuixa un quadrat de 5 "x 5" al pla xy
+
+3. Extraieu la casella 5 "per formar una caixa sòlida
+
+Molt senzill, oi? De fet, l’algorisme que escriuríem per fer una caixa d’ordinador és similar, tret que hagi de ser més explícit. Això es deu al fet que l’ordinador, a diferència d’un dissenyador humà, no té cap coneixement inherent ni intuïció sobre el disseny, l’espai, la forma o les caixes. Així, quan desenvolupem algorismes de disseny per a ordinadors, hem d'especificar-los en el propi idioma de l’ordinador. Els llenguatges utilitzats per comunicar instruccions directament a un ordinador es diuen llenguatges de programació i el procés d’escriptura d’algorismes per a ordinadors es denomina programació per ordinador.
+Aquesta és una mica més les instruccions que en les nostres tres línies anteriors i poden ser difícils de desxifrar en un primer moment. Tanmateix, està dient a l’ordinador que faci el mateix quadre exacte, excepte d’una manera explícita que pugui entendre. El text que s’utilitza per donar instruccions d’ordinador s’anomena codi d’ordinador, i sempre s’escriu en línia per línia, i cada línia dóna a l’ordinador una tasca específica. Donat un fragment de codi, l’ordinador començarà a la primera línia i executarà totes les instruccions en ordre fins que arribi al final del codi.
+A diferència del llenguatge humà, el codi informàtic ha d’adherir-se a normes molt estrictes, de manera que mai no hi ha confusió sobre el que ha de fer l’ordinador. Aquestes regles varien el llenguatge per llenguatge i es denominen la sintaxi de la llengua. L’escriptura de codi d’ordinador requereix que el programador sàpiga exactament com escriure cada operació en la sintaxi del llenguatge, i encara que hi ha algunes eines per ajudar el programador a trobar la sintaxi adequada, en general tota la programació es realitza escrivint directament el codi en un text. editor sense cap tipus d’interfície gràfica gràfica.
+
+import rhinoscriptsyntax as rs
+
+length = 5
+
+width = 5
+
+height = 5
+
+pt_origin = rs.AddPoint(0,0,0)
+
+pt_x = rs.MoveObject(rs.CopyObject(pt_origin), [length,0,0])
+
+pt_y = rs.MoveObject(rs.CopyObject(pt_origin), [0,width,0])
+
+pt_z = rs.MoveObject(rs.CopyObject(pt_origin), [0,0,height])
+
+plane = rs.PlaneFromPoints(pt_origin, pt_x, pt_y)
+
+rect = rs.AddRectangle(plane, length, width)
+
+box = rs.ExtrudeCurve(rect, rs.AddLine(pt_origin, pt_z))
+
+Aquesta és una mica més les instruccions que en les nostres tres línies anteriors i poden ser difícils de desxifrar en un primer moment. Tanmateix, està dient a l’ordinador que faci el mateix quadre exacte, excepte d’una manera explícita que pugui entendre. El text que s’utilitza per donar instruccions d’ordinador s’anomena codi d’ordinador, i sempre s’escriu en línia per línia, i cada línia dóna a l’ordinador una tasca específica. Donat un fragment de codi, l’ordinador començarà a la primera línia i executarà totes les instruccions en ordre fins que arribi al final del codi.
+A diferència del llenguatge humà, el codi informàtic ha d’adherir-se a normes molt estrictes, de manera que mai no hi ha confusió sobre el que ha de fer l’ordinador. Aquestes regles varien el llenguatge per llenguatge i es denominen la sintaxi de la llengua. L’escriptura de codi d’ordinador requereix que el programador sàpiga exactament com escriure cada operació en la sintaxi del llenguatge, i encara que hi ha algunes eines per ajudar el programador a trobar la sintaxi adequada, en general tota la programació es realitza escrivint directament el codi en un text. editor sense cap tipus d’interfície gràfica gràfica. En comparació amb el codi informàtic, les tres instruccions que vam escriure abans es denominen sovint pseudo-codi, ja que descriuen l’estructura bàsica de l’algoritme però s’escriuen de manera informal en llenguatge humà. Tot i que el pseudo-codi no es pot executar directament en un ordinador, sovint és molt útil per desenvolupar un algoritme informàtic.
+Algunes peces senzilles de codi, com ara les anteriors, són anomenades "scripts" i, per tant, sovint escolten dissenyadors que descriuen el disseny computacional com "scripting". Aquesta terminologia va evolucionar a partir dels primers programes de disseny que incloïen els seus propis llenguatges de programació propietaris rudimentaris que ells anomenaven "llenguatges de script". En general, una col·lecció de codi es coneix com a "programa" i pot ser tan simple com algunes línies de codi o tan complexes com tot un sistema operatiu com Windows.
+
+Elements de programació informàtica
+Tot i que el codi informàtic pot ser difícil de llegir i entendre al principi, la major part d'aquesta dificultat deriva realment de la sintaxi: les regles específiques que guien la forma en què cada idioma està escrit i formatat. Darrere de la seva sintaxi específica, però, tots els llenguatges de programació es basen en un petit conjunt d’estructures comunes que impulsen la lògica de com funcionen. De fet, gairebé tots els idiomes comuns, incloent-hi Python, es basen només en 5 elements bàsics. En lloc de submergir-se immediatament en codi i sintaxi, tractem primer d'entendre aquests elements i com funcionen. Això ens donarà una millor intuïció sobre la programació d’ordinadors i farem que l’aprenentatge de la sintaxi real sigui molt més fàcil en el futur.
+
+Variables
+Les variables són contenidors que emmagatzemen informació. Això pot ser una única peça de dades, com ara l’altura d’un edifici, una llista de múltiples dades, com ara una llista d’habitacions d’un edifici, o conjunts de dades més complexos que veurem més endavant.
+
+Loops
+Els bucles són estructures dins d'un programa que poden repetir grups d'instruccions durant un període de temps determinat. Els bucles faciliten l’escriptura d’instruccions per a tasques repetitives, com ara crear múltiples finestres en una façana.
+
+Condicionals
+Els condicionants són estructures dins d’un programa que canvien quines instruccions s’executen en funció d’una determinada condició. Per exemple, si esteu escrivint un algoritme per especificar els tipus de finestres d’una casa, és possible que tingueu un condicional que crea una finestra operable si es troba dins d’un dormitori o en una finestra fixa. Junts, els bucles i els condicionants són els dos mecanismes principals per alterar el flux o seqüència en què s'executen les instruccions dins d'un programa.
+
+Funcions
+Les funcions són estructures que completen una sèrie d’operacions per aconseguir una tasca determinada que pot ser reutilitzada diverses vegades dins d’un programa. Es poden considerar funcions com a mini programes. Les funcions solen tenir una o més entrades que guien la manera com funciona el programa intern, i una o més sortides que es tornen al programa principal un cop s'ha executat la funció.
+Un dels exemples més simples d’una funció és l’operador ‘+’, que accepta dos números com a entrades i retorna la seva suma com a sortida. A l’arquitectura podeu crear una funció que organitze un conjunt de mobles dins d’una habitació. Les entrades poden ser el tipus i la frontera de l’habitació, mentre que les sortides serien la geometria del moble.
+Les funcions són fonamentals per crear programes més modulars i eficients que puguin realitzar tasques més complexes. La programació informàtica que utilitza només aquests primers quatre elements es coneix comunment com a programació procedimental, ja que defineix un conjunt finit de procediments per executar l'ordinador. Tot i que es tracta d’una programació d’ordinador més tradicional i limitada, normalment és suficient per a la majoria de les tasques de disseny.
+
+Objectes
+Els objectes (de vegades anomenats classes) són estructures que defineixen un tipus particular d'entitat dins d'un programa. Un cop definit un objecte, un programa sol treballar amb instàncies individuals d'un objecte que es creen en funció de l'especificació de l'objecte. Els objectes poden tenir un conjunt de variables que emmagatzemen informació única sobre cada instància. Atès que aquestes variables només pertanyen a la instància i normalment es mantenen ocultes de la resta del programa, se solen referir-les com a variables locals. Els objectes també defineixen normalment un conjunt de funcions internes que descriuen determinades tasques o comportaments de l'objecte. Les funcions definides localment dins d’un objecte són comunament referides com a mètodes de l’objecte.
+Per exemple, si voleu crear un programa per simular el comportament d'un gos, podeu crear un objecte de tipus "gos". Aquest objecte emmagatzemaria un conjunt de variables locals sobre la raça del gos, el color de la pell, el pes, etc. També definireu un conjunt de mètodes que descriuen el comportament del gos - per exemple, podeu tenir mètodes per a "menjar", "executar", i 'escorça'. Quan hàgiu definit l'objecte "gos", podeu crear gossos específics creant instàncies de l'objecte i assignant-los les variables locals adequades. A continuació, podeu executar els mètodes sobre els gossos individuals per fer-los dur a terme l'acció. A l'arquitectura, podeu definir un objecte de tipus "casa", les variables locals emmagatzemant informació com ara el nombre d'habitacions, materials i alçada, i els mètodes dels quals defineixen la forma en què es crea la geometria de la casa.
+La programació informàtica basada en objectes es coneix com a programació orientada a objectes (OOP). Amb l'OOP, podem pensar en un programa d’ordinador com a entorn simulat que conté molts agents (objectes) que interactuen i interactuen amb l’entorn i altres agents basant-se en les definicions dels seus objectes. Tot i que és fàcil pensar en aquests agents com a coses físiques com els gossos, el mateix marc es pot aplicar fàcilment a altres entitats d’un programa com ara una finestra o un botó. A diferència de simples scripts o programes de procediment, els programes basats en objectes normalment no tenen un ordre d’execució fixat i cap hora de finalització fixa.
+OOP és un paradigma molt més modern que la programació procedimental i s'utilitza per dissenyar gairebé tot el programari que utilitzem avui. Per exemple, sota la seva superfície, fins i tot un simple processador de text és realment una col·lecció d'agents com ara finestres, menús i botons que escolten la interacció de l'usuari i influeixen en el comportament dels altres. Aquest programa no té cap comportament fixat ni cap hora de finalització. Un cop iniciat, esperarà l’entrada de l’usuari, realitzarà determinades tasques en funció d’aquesta entrada i romandrà fins que es digui que acaba. Tot i que l'ús d'objectes no és habitual en tasques de disseny, però la integració d'algunes de les idees de la programació orientada a objectes té moltes possibilitats per definir espais de disseny més interessants i complexos.
+
+Estratègies computacionals per definir espais de disseny
+Basant-nos en la nostra discussió sobre programació informàtica fins ara, podem pensar en diverses estratègies per definir computacionalment els nostres espais de disseny:
+
+Control morfològic a través de variables contínues
+Control de canvi d'estat a través de variables discretes
+Control recursiu a través de funcions i conjunts de regles
+Control del comportament mitjançant programació orientada a objectes
+
+Aquestes estratègies descriuen diferents maneres en què podem traduir un conjunt de paràmetres finits en instruccions perquè l’ordinador creï la forma. Van des de mètodes molt simples i directes a sistemes més complexos que poden crear espais de disseny més complexos amb potencial per crear dissenys inesperats. Cada estratègia es basa en alguns dels elements de programació que hem descrit anteriorment, amb les estratègies més complexes que requereixen l'ús d'elements més complexos.
+Les variables contínues (nombres decimals) es poden utilitzar directament com a entrades per conduir la forma de diverses formes a l’espai de disseny. Per exemple, podeu utilitzar tres variables contínues per controlar la longitud, l’amplada i l’altura de la caixa anterior. Les variables discretes (nombres sencers) o categòriques poden definir diferents tipus d’una cosa dins d’un model, i s’utilitzaran conjuntament amb bucles o condicionants per canviar discretament certs elements d’un model. Les estratègies morfològiques i de canvi d'estat són eficaces, però tendeixen a requerir massa paràmetres d'entrada. Per exemple, imagineu que teniu una entrada separada per descriure cada finestra en una torre alta.
+Els models descrits només amb aquests mètodes directes són sovint massa simples per ser interessants, o tenen massa entrada per ser efectivament buscats per l’algoritme genètic. Les tres últimes estratègies, en canvi, poden limitar el nombre de variables conservant la complexitat del nostre espai de disseny creant relacions més complexes entre els inputs i la forma final.
+Les estratègies recursives utilitzen funcions recursives per descriure una estructura formal complexa basada en un conjunt de regles parametritzades. Per exemple, és possible que tingueu un únic conjunt d'entrades que defineixin un conjunt de regles per col·locar finestres a la torre, i les finestres individuals es col·loquen seguint aquestes normes i les seves ubicacions individuals a l'edifici. Això us permet mantenir el control de totes les finestres, alhora que minimitzeu i abreu els paràmetres d’entrada necessaris. Aquesta tècnica pot definir geometries altament complexes, com ara sistemes fractals, a partir d'un conjunt molt petit de paràmetres inicials, i és molt comú en les geometries de la natura.
+Les estratègies de comportament proporcionen els mètodes més avançats per controlar les formes en el nostre model d’espai de disseny. Aquestes estratègies utilitzen les idees de la programació orientada a objectes per a abstracció de la relació entre els paràmetres d’entrada i les formes finals. Aquí, els paràmetres d’entrada poden descriure els mètodes i les condicions inicials d’un conjunt d’objectes, i el disseny final és el resultat de la interacció entre aquests objectes després d’un període de temps determinat.
+
+Ferramentes per al disseny computacional
+En aquestes sessions posteriors treballarem amb Processing i finalment en Arduino són programaris i a la vegada llenguatges.
+Processing és una ferramenta creada per a artistes i dissenyadors i ens dóna la possibilitat de crear i treballar tant en imatges, tipografia, video, text processar-ho en un altre tipus d'imatge o arxiu final.
+Arduino és un llenguatge i programari germà de Processing i el que ens aporta és la comunicació serial amb dispositius electrònics, sensors i comunicació amb altres dispositius i tecnologies, connexió amb el món físic.
+
+Bibliografia
+Nagy, D. Introduction to compuattional design Introduction to computational design, 3/02/2017
