@@ -1,0 +1,117 @@
+USABILITAT I ACCESSIBILITAT
+
+Usabilitat
+
+
+10 Usability Heuristics for User Interface Design
+
+Amb aquest enfocament sobre la facilitat d’ús, em vaig adonar que la majoria dels criteris d’èxit de WCAG 2.1 s'ajusten a les 10 heurístiques d’usabilitat de Nielsen. Aquestes heurístiques són una valuosa guia per al disseny d’interacció i ens poden ajudar a elaborar productes útils per a tothom. (Aquí llegiu el conjunt complet de la Heurística de Nielsen del grup Nielsen-Norman.) Crec fermament en la vinculació entre l'accessibilitat i la usabilitat a l'hora de crear contingut per a la web. Podeu crear continguts bellament utilitzables i accessibles seguint aquestes heurístiques, tenint en compte les necessitats dels usuaris amb tecnologia assistida.
+
+Visibilitat de l’estat del sistema
+El sistema sempre hauria d’informar els usuaris sobre el que està passant, mitjançant comentaris adequats en un temps raonable.
+
+(Llegiu l'article complet sobre la visibilitat de l'estat del sistema)
+
+Coincidència entre el sistema i el món real
+El sistema hauria de parlar la llengua dels usuaris, amb paraules, frases i conceptes familiars per a l'usuari, en comptes de termes orientats al sistema. Seguiu les convencions del món real, perquè la informació aparegui en un ordre lògic i natural.
+
+(Llegiu l'article complet sobre la concordança entre el sistema i el món real)
+
+Control i llibertat d'usuaris
+Els usuaris solen triar les funcions del sistema per error i necessitaran una "sortida d’emergència" clarament marcada per sortir de l’estat no desitjat sense haver de passar per un diàleg estès. Suport per desfer i refondre
+
+Consistència i estàndards
+Els usuaris no haurien de preguntar-se si diferents paraules, situacions o accions signifiquen el mateix. Seguiu les convencions de la plataforma.
+
+Prevenció d'errors
+Encara millor que els bons missatges d’error és un disseny acurat que evita que es produeixi un problema. Elimineu les condicions propenses a l’error o comproveu-les i presenteu als usuaris una opció de confirmació abans que es comprometin amb l’acció.
+
+(Llegiu l'article complet sobre la prevenció d'errors d'usuari)
+
+Reconeixement en lloc de recordar
+Minimitzeu la càrrega de memòria de l’usuari fent visibles els objectes, les accions i les opcions. L’usuari no hauria de tenir que recordar informació d’una part del diàleg a una altra. Les instruccions d’ús del sistema han de ser visibles o fàcilment recuperables sempre que sigui oportú.
+
+(Llegiu l'article complet sobre el reconeixement i el record en UX)
+
+Flexibilitat i eficiència d’ús
+Els acceleradors, que no s’observen per l’usuari novell, sovint poden accelerar la interacció amb l’usuari expert, de manera que el sistema pugui atendre usuaris amb experiència i experiència. Permet als usuaris personalitzar les accions freqüents.
+
+Disseny estètic i minimalista
+Els diàlegs no haurien de contenir informació que no sigui rellevant o que rarament es necessiti. Cada unitat d’informació addicional en un diàleg competeix amb les unitats d’informació pertinents i disminueix la seva relativa visibilitat.
+
+Ajudeu els usuaris a reconèixer, diagnosticar i recuperar-se dels errors
+Els missatges d'error s'han d'expressar en llenguatge senzill (sense codis), indicar amb precisió el problema i suggerir de manera constructiva una solució.
+
+Ajuda i documentació
+Tot i que és millor si el sistema es pot utilitzar sense documentació, pot ser necessari proporcionar ajuda i documentació. Tota aquesta informació hauria de ser fàcil de cercar, centrada en la tasca de l'usuari, enumerar els passos concrets que cal dur a terme i no ser massa grans.
+
+ACCESSIBILITAT
+
+Accessibilitat
+
+Les persones amb discapacitat són tan diverses com les persones sense discapacitats i també les seves discapacitats. La lliçó clau aquí és pensar més enllà del vostre propi ordinador i de com utilitzeu el web i començar a aprendre sobre com l’utilitzen els altres: no sou els vostres usuaris. A continuació s'expliquen els principals tipus de discapacitat a tenir en compte, juntament amb les eines especials que utilitzen per accedir al contingut web (conegudes com a tecnologies d'assistència o AT).
+A més, l’accessibilitat no és una cosa que necessiti llargues hores de programació o un ajust excessiu del disseny. Amb unes poques línies de codi i ajustaments de la interfície menors, la vostra aplicació pot arribar a un públic molt més ampli. Tot i això, l’accessibilitat no és una cosa que poseu una llista de comprovacions i, finalment, la comproveu. L'accessibilitat veritable està arrelada profundament a la interfície d'una aplicació.
+Disseny i accessibilitat Diagrama Venn
+Diagrama Venn
+L'accessibilitat és clau per a una bona experiència d'usuari. Si esteu dissenyant una aplicació sense fer consideracions bàsiques per a un ús fàcil, no és correcte. Si un cec de color no pot distingir la diferència entre l'estat d'un botó o en desactivat, el botó ha estat realment dissenyat tenint en compte tots els usuaris? No ho crec.
+Una comprovació d’accessibilitat ràpida
+El primer que voleu fer amb la vostra aplicació seria fer accessible tots els elements de la interfície que tinguin un propòsit. És una llista bàsica de cinc tasques que podeu realitzar per a cada element. Finalment, fa que la vostra aplicació funcioni amb la funcionalitat de transmissió de veu del dispositiu.
+
+Ha de ser un element accessible? 
+Si el vostre element funciona amb l’ús de l’aplicació. Hauria de ser accessible.
+Etiqueta el teu element 
+Manteniu les etiquetes de forma succinta. Si es tracta d'un botó de cerca, l’etiqueta hauria de dir "Cerca". "Un botó per trobar coses" no és una gran idea.
+Definiu el seu tret 
+És un botó o un control lliscant o un avís de canvi d'estat? Definiu quin és el vostre element.
+Per a elements basats en valors: Definiu el valor que s’ha de retornar. Diguem que la vostra aplicació té un control lliscant per establir el percentatge d’opacitat d’un quadre. Quan faig una veu en off sobre l’element, hauria de dir: “Opacitat: 30%” i ​​no només “Opacitat”.
+Proporcioneu consells! 
+Com a dissenyador, teniu la responsabilitat d’orientar l’usuari a través de la interfície de l’aplicació.
+Alguns argumentarien que es tracta més d’un codi que dissenyar la interfície i que en certa manera tenen raó. La majoria de les coses que he esmentat anteriorment s'han de fer en codi, però definitivament formen part d’una bona experiència d’usuari.
+
+Comprovació de l'escala de grisos
+Mentre dissenyem una interfície per a un dispositiu de pantalla tàctil, podem distingir elements i estats els uns dels altres. Per exemple: un "estat en" apareix diferent del "estat apagat" del mateix botó.
+No obstant això, moltes vegades això no es tradueix en persones de tot tipus d’habilitats. Per exemple, si el botó canvia de color només en canviar d’estat. Algú que sigui de color cec no serà capaç de distingir entre els dos estats. Una comprovació en escala de grisos resol el problema. He intentat explicar la prova d’escala de grisos.
+
+Això no es tradueix només a botons, sinó que també tradueix tots els canvis en la interfície. La pregunta important aquí és: Pot un usuari veure un canvi a la pantalla, sense canviar de color? Ell hauria de vore-ho.
+
+Accessibilitat en el text
+iOS proporciona als usuaris la possibilitat d'augmentar la mida del text en els seus telèfons. Aquesta és una funcionalitat especialment útil per a aquells amb visió distant. Una funcionalitat que crec, hauria de tenir cada aplicació.
+També hi ha una funcionalitat de parla. Opcional però molt útil. No només ajuda a les persones amb deficiència visual. És molt útil per llegir les coses. De fet, faig servir aquesta funció per a gairebé tots els articles que llegeixo en línia. M’ajuda a llegir a un ritme que, per altra banda, no seria capaç de fer i mentre es llegeixi, em puc centrar en altres treballs també. Una característica molt útil, que també és part de fer que la vostra aplicació sigui més accessible.
+
+Subtítols i subtítols tancats
+Els subtítols són probablement la característica d’accessibilitat més utilitzada i la molt recomanable per a cada vídeo
+Usat per motius diversos, els subtítols i els subtítols tancats són un clàssic exemple d’accessibilitat. Hi ha moments en què la gent troba dificultats per captar l’accent d’una persona al vídeo, hi ha altres on es parla un llenguatge desconegut del públic i, sobretot, de vegades l’usuari té un problema d’audició. Els subtítols i els subtítols tancats ajuden molt lluny.
+
+Persones amb deficiències visuals
+Les persones amb deficiències visuals inclouen persones amb ceguesa, visió de baix nivell i ceguesa de color. Moltes persones amb deficiències visuals fan servir lupes de pantalla que són amplificadors físics o capacitats de zoom del programari. La majoria de navegadors i sistemes operatius actuals tenen capacitats de zoom. Alguns usuaris es basen en lectors de pantalla, que és un programari que llegeix el text digital en veu alta.
+
+Pel que fa a les estadístiques, l’Organització Mundial de la Salut estima que "es calcula que 285 milions de persones amb deficiències visuals a tot el món: 39 milions són cecs i 246 tenen baixa visió". (vegeu Discapacitat visual i ceguesa). Aquesta és una població gran i significativa d’usuaris que només es pot perdre perquè el vostre lloc no està codificat correctament, gairebé de la mateixa mida que la població dels Estats Units d’Amèrica.
+
+Persones amb deficiències auditives
+En cas contrari, conegut com a persones amb deficiències auditives o sordes, aquest grup de persones té un nivell d'audició reduït o bé no té cap audiència. Les persones amb discapacitat auditiva fan ús d’AT (vegeu Dispositius d’assistència per a persones amb trastorns auditius, de veu, de parla o de llenguatge), però en realitat no existeixen AT especials per a l’ús d’ordinador / web.
+
+No obstant això, hi ha tècniques específiques a tenir en compte per proporcionar alternatives de text al contingut d’àudio que poden llegir, des de senzilles transcripcions de text fins a pistes de text (és a dir, subtítols) que es poden visualitzar juntament amb el vídeo. Un article més endavant parlarà d’aquests.
+
+Les persones amb deficiències auditives també representen un valor significatiu: "466 milions de persones a tot el món tenen pèrdues auditives amb discapacitat", diu el full de dades de sordesa i pèrdua d'audició de l'Organització Mundial de la Salut.
+
+Persones amb discapacitat de mobilitat
+Aquestes persones tenen discapacitats pel que fa al moviment, que poden incloure problemes purament físics (com la pèrdua de membres o paràlisi), o trastorns neurològics / genètics que provoquen debilitat o pèrdua de control a les extremitats. Algunes persones podrien tenir dificultats per fer els moviments de les mans exactes necessaris per utilitzar un ratolí, mentre que altres podrien ser més afectats, potser serien significativament paralitzats fins al punt que necessiten utilitzar un punter de cap per interactuar amb els ordinadors.
+
+Aquest tipus de discapacitat també pot ser el resultat de la vellesa, en lloc de qualsevol trauma o condició específic, i també podria resultar de limitacions de maquinari: alguns usuaris poden no tenir un ratolí.
+
+La forma en què normalment afecta el desenvolupament del web és el requisit que els controls siguin accessibles pel teclat: discutirem sobre l'accessibilitat del teclat en articles posteriors del mòdul, però és una bona idea provar alguns llocs web utilitzant només el teclat per veure com segueixes endavant. Podeu utilitzar la tecla de tabulació per moure's entre els diferents controls d’un formulari web, per exemple? Podeu trobar més detalls sobre els controls del teclat a la nostra prova de navegador creuat mitjançant la secció d’accessibilitat del teclat natiu.
+
+Persones amb deficiències cognitives
+El deteriorament cognitiu es refereix a un ampli ventall de discapacitats, de persones amb discapacitats intel·lectuals que tenen les capacitats més limitades, a tots nosaltres a mesura que envellim i tenim dificultats per pensar i recordar. La gamma inclou persones amb malalties mentals, com ara la depressió i l'esquizofrènia. Inclou també persones amb discapacitats d’aprenentatge, com ara la dislèxia i el trastorn per hiperactivitat per dèficit d’atenció. És important destacar que, tot i que hi ha una gran diversitat dins de les definicions clíniques de les deficiències cognitives, les persones amb elles experimenten un conjunt comú de problemes funcionals. Aquests inclouen dificultats per entendre el contingut, recordar com completar les tasques i la confusió causada per dissenys de pàgines web inconsistents.
+
+Una bona base d’accessibilitat per a persones amb deficiències cognitives inclou:
+
+Lliurament de continguts en més d'una manera, com ara text a veu o vídeo;
+Contingut comprensible, com ara text escrit amb estàndards en llenguatge pla;
+Centrar l'atenció en continguts importants;
+Minimitzar les distraccions, com ara contingut o anuncis innecessaris;
+Disseny i navegació de pàgines web coherents;
+Els elements familiars, com ara els enllaços subratllats, de color blau, quan no es visiten i són de color porpra quan es visita;
+Dividir els processos en passos lògics i essencials amb indicadors de progrés;
+Autenticació de llocs web tan fàcil com sigui possible sense comprometre la seguretat; i
+Fer que els formularis siguin fàcils de completar, com ara amb missatges d'error clars i una simple recuperació d'errors.
