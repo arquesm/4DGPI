@@ -1,0 +1,35 @@
+La interactivitat
+
+La interacció es podria definir com l’intercanvi d’informació entre dos o més participants actius.
+"Un procés iteratiu d’escoltar, de pensar i de parlar entre dos o més actors” Chris Crawford
+human computer interaction, computer human interaction, or experience design.
+
+Conversa
+
+Feedback loop.
+(cos humà respon a impulsos respira, obri i tanca els ulls depenent als estímuls i necessitats) -> La missatgeria i la interacció -> transmissió -> resposta
+El mode adequat depèn dels usuaris, de la tasca i del context en què es produeix la interacció.
+
+Missatges i la interacció
+Crear aplicacions interactives és entendre com el sistema veu els missatges dels usuaris i com veu l’usuari els missatges del sistema.
+Els lemes populars en el disseny com a "principi de menys sorpresa" o expressen la noció que la interacció familiar és la interacció preferible perquè la corba d’aprenentatge de l’usuari és molt més baixa que una interacció realment nova acció. Els usuaris han d’aprendre com es retorna el feedback i com modificar el seu comportament basant-se en els comentaris, que poden ser un procés llarg.
+
+Les interfícies i la interacció
+Llenguatges d’interacció.
+Hi han molts de llenguatges possibles nosaltres gastarem Processing, P5js, Arduino.
+
+Manipulació física.
+Referència directa entre la relació entre els humans i les màquines.
+Exemple. La ràdio. Switchers, knob, dials, sliders.
+
+Inputs amb codi
+Manipulacions amb ratolí
+Presència, localització i Imatge
+Interfícies hàptiques i multitàctic
+Dispositius comercials telèfons, tablets. No obstant, els fonaments del disseny i de l’estructuració de les interaccions mitjançant aquestes interfícies basades en gestos probablement no canviaran.
+Les aixetes, les portes. El llenguatge d'aquests gestos es converteix en un llenguatge que podem utilitzar per habilitar la interacció tant com un llenguatge natural comú, una icona o un patró de botons premut en un controlador de videojocs.
+
+El Gest
+Hi ha molts enfocaments interactius d’avantguarda que s’estan explorant, des dels sistemes d’escriptura de reconeixement i de noves estratègies d’entrada clau com els sistemes de reconeixement de moviment de vídeo.
+
+La veu i reconeixement de la parla
